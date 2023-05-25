@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title> CSS </title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/pagcss.css">
+    
+</head>
+
+
+
+<body>  
+    <header>
+        <div id="title">
+            <h1>cascading style sheets : </h1>
+        </div>
+        <p> CSS é um mecanismo para adicionar estilos, cores, fontes, espaçamento a uma página web ou aplicativos, aplicado diretamente nas tags HTML ou ficam contido dentro das tags style. </p>
+    </header>
+
+    
+    <main>
+        <aside id="extra">
+            <p><strong> Ao trabalhar com css temos como responsabilidade saber o minímo de design, como: </strong></p>
+             <div class="extra-lista">
+                 <ol style="margin-top: 10px;" type="I">
+                    <li> Psicologia das Cores </li>
+                    <li>Hexadecimal, RGB, HSL</li>
+                    <li>Tipografia</li>
+                </ol>
+             </div> 
+    
+            <p><a class="pag" href="index.html">clique aqui</a> para voltar</p>
+        </section>
+
+        <section>
+            <div class="text-hidden-all">
+                <button onclick="dropAll()" class="dropbtn">codigos</button>
+                <div id="exDropdownAll" class="dropdownall-content">
+                    <p> Aqui temos os codigos importantes para implementar  seu css</p>
+               
+                        <button onclick="show('textDiscover')" class="dropbtn2"><h3>Regra At</h3></button>
+                </div>
+            </div>
+                <div id="textDiscover">
+                    <p>Uma regra at (at-rule) é uma CSS statement   iniciando com um caractere arroba, '@', seguido por um indetificador e terminando no primeiro ponto e vírgula';', fora de um bloco, ou no fim do primeiro Bloco CSS.</p>
+                    <ol>
+                        <li><code>@charset: </code>definindo o conjunto de caracteres (codificação) usado pela folha de estilos.</li>
+                        <li><code>@import: </code>informando o motor CSS para incluir uma folha de estilos externa.</li>
+                        <li><code>@media: </code>um grupo de regras condicional que é aplicado ao conteúdo caso o dispositivo de exibição cumpra com a condição de mídia definida.</li>
+                        <li><code>@font-face: </code>descrevendo o aspecto de uma fonte externa que deve ser baixada.</li>
+                        <li><code>@document: </code> um grupo de regras condicional que é aplicado ao conteúdo caso o documento cumpra com os critério definidos.</li>
+                        <li><code>@supports: </code>um grupo de regras condicional que é aplicado caso o navegador cumpra com os critérios definidos.</li>
+                    </ol>
+                </div> 
+        </section>
+
+        <section id="sites">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container-slide-css">
+                        <img class="uiverse-img" src="imagens/site-uiverse.png" class="d-block w-100" alt="...">
+                        <p class="slide-css-p"> Esse site pode te ajudar com elementos customizados no CSS </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-slide-css">
+                        <img class="portal-css-img" src="imagens/site-css-portal.png" class="d-block w-100" alt="...">
+                    </div>
+                        <p class="slide-css-p"> Contém uma ferramenta para você criar formas incriveis com facilidade </p>
+                    </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+        </section>
+    </main>
+    <script src="js/drop.js"></script>
+    <script src="js/texthide.js"></script>
+</body>
+</html>
+
+
+<mark style="background: rgb(88, 132, 182);"></mark>

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/*comentario no css*/
+@font-face {
+	font-family: 'origintech';
+	src: url('../fontes/OriginTech\ personal\ use.ttf')format('truetype');
+	src: url('../fontes/OriginTech\ personal\ use.otf')format(opentype);
+
+}
+@font-face {
+	font-family: 'dream';
+	src: url('../fontes/Dream\ MMA.ttf') format('truetype');
+}
+
+
+:root{
+	--cor0:#94d5fd;
+	--cor1:#4fa8df;
+	--cor2:#0076BE;
+    --cor3:#023a5c;
+	--cor4:#f7c3b3;
+	--cor5:#FF4B14;
+	--corh1: #3D3D45;
+	--cor-destaque: #02024b;
+	--corlist: #cfe8f7;
+	--fonte-dream: 'dream';
+	--fonte-origin-tech: 'origintech';
+	--fonte-padrao: arial, helvetica, verdana, sans-serif;
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	background-color: var(--cor0);
+	text-align: center;
+	place-items: center;
+	place-content: center;
+}
+
+header{
+	background-color: var(--cor0);
+	width: 100%;
+	display: flex;
+
+}
+nav{
+	width: 100%;
+	background-color: var(--cor2);
+	
+}
+#menu a{
+	text-decoration: none;
+	color: var(--cor0);
+	
+}
+
+
+
+#title>h1{
+	background: var(--corlist);
+	color: var(--cor3);
+	box-shadow: 2px 4px 3px  rgba(0, 0, 0, 0.486);
+	text-shadow: 2px 2px 3px black;
+	font:  bolder 3em var(--fonte-origin-tech);
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	width: 100%;
+	
+
+}
+#title>p {
+	font-style: var(--fonte-padrao);
+	font-size: 20px;
+	text-indent: 30px;
+
+}
+
+
